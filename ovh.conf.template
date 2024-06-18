@@ -1,0 +1,10 @@
+[default]
+; general configuration: default endpoint
+endpoint=ovh-us
+
+[ovh-us]
+; configuration specific to 'ovh-us' endpoint
+application_key=YOUR_KEY_HERE
+application_secret=YOUR_SECRET_HERE
+consumer_key=YOUR_CONSUMER_KEY_HERE
+

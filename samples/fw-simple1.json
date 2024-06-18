@@ -1,0 +1,25 @@
+[
+    {"sequence":0, "action":"permit", "protocol":"tcp", 
+     "source":null, "sourcePort":null, "destinationPort":null,
+     "tcpOption":"established", "fragments":false,
+     "comment":"Allow established TCP connections"
+    },
+
+    {"sequence":4, "action":"permit", "protocol":"ipv4", 
+     "source":"18.18.71.54/32", "sourcePort":null, "destinationPort":null,
+     "tcpOption":null, "fragments":false,
+     "comment":"Allow all traffic from gateway server"
+    },
+
+    {"sequence":18, "action":"permit", "protocol":"udp", 
+     "source":null, "sourcePort":"123", "destinationPort":null,
+     "tcpOption":null, "fragments":false,
+     "comment":"Allow UDP dgrams from NTP servers"
+    },
+
+    {"sequence":19, "action":"deny", "protocol":"ipv4", 
+     "source":null, "sourcePort":null, "destinationPort":null,
+     "tcpOption":null, "fragments":false,
+     "comment":"Deny everything else"
+    }
+]
